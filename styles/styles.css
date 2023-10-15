@@ -1,0 +1,418 @@
+@import './variables.css';
+
+a {
+  text-decoration: none;
+  color: var(--sidebar-background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background);
+  margin: 0 auto;
+}
+
+/* Main Styles */
+.main {
+  width: 1300px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 10px;
+  padding: 20px 100px 10px;
+}
+
+/* Main Content */
+.main_content {
+  background-color: var(--background);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+  width: 1200px;
+}
+
+/* About User */
+.about_user {
+  padding: 60px 100px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  background-color: var(--about-user-container);
+}
+
+.name {
+  font-family: var(--main-font);
+  line-height: 500%;
+  color: var(--name-color);
+  
+}
+
+.first-name {
+  font-size: 75px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.last-name {
+  font-size: 65px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 20px;
+}
+
+.about_position {
+  margin-top: 5px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 30px;
+  letter-spacing: 10px;
+  color: var(--name-color);
+}
+
+.about_discription {
+  font-family: var(--secondary-text-font);
+  margin-top: 35px;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--name-color);
+  line-height: 30px;
+  text-align: justify;
+}
+
+
+/* Projects */
+
+/* Project Title  */
+
+.title {
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  color: var(--name-color);
+  text-align: center;
+  text-transform: uppercase;
+  /* background-color: var(--about-user-container); */
+}
+
+/* Projects List */
+
+.projects_list {
+  padding: 10px 20px;
+}
+
+.project_list_item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: var(--sidebar-background);
+}
+.project_list_item:last-child {
+  margin-bottom: 0;
+}
+
+.projects_list_weight {
+  color: var(--sidebar-background);
+}
+
+.project_item_link {
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+  padding: 5px 0;
+}
+
+.project_item_text {
+  font-size: 20px;
+}
+
+.project_item_technologies {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.project_item_code_link {
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.line {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--separation-line);
+}
+
+/* Work Styles */
+
+.work_wrapper {
+  padding: 5px 20px;
+}
+
+.work_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.work_discription {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.work_list {
+  padding: 5px 20px;
+}
+
+.work_item {
+  padding: 5px;
+  margin-bottom: 5px;
+  color: var(--name-color);
+  font-size: 20px;
+}
+.work_item:last-child {
+  margin-bottom: 0;
+}
+
+.education_title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.education_wrapper {
+  padding: 5px 20px;
+}
+
+.education_discription {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 15px;
+  color: var(--sidebar-background);
+  margin-bottom: 5px;
+  padding: 5px;
+  line-height: 150%;
+}
+
+.secondary_title {
+  font-size: 20px;
+  line-height: 15px;
+  color: var(--sidebar-background);
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.add_education_wrapper {
+  padding: 5px 20px;
+}
+
+.add_education_discription {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.military_wrapper {
+  padding: 5px 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: var(--name-color);
+  max-width: 400px;
+}
+
+.photo_wrapper {
+  display: flex;
+  height: 575px;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  width: 334px;
+  height: 450px;
+  border-radius: 20px;
+}
+
+/* Contacts */
+
+.sidebar_title {
+  text-transform: uppercase;
+  background-color: var(--about-user-container);
+  color: var(--name-color);
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contacts {
+  color: var(--background);
+  margin-bottom: 40px;
+  padding: 50px 80px;
+}
+
+.contacts_list {
+  list-style: none;
+}
+
+.contacts_list_item {
+  margin-bottom: 10px;
+}
+
+.contacts_list_item:last-child {
+  margin-bottom: 0;
+}
+.my-projects-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1e0139;
+  text-decoration: underline;
+}
+.my-projects-description {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  padding: 15px 0px 15px 0px;
+}
+.contacts_list_link {
+  color: var(--background);
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: underline;
+}
+
+.projects_title {
+  margin-top: 5px;
+color: var(--accent-text-color);
+}
+.projects_title2 {
+  font-family: var(--main-font);
+  font-size: 25px;
+  margin-top: 5px;
+  color: var(--accent-color);
+  padding: 5px;
+  font-weight: bold;
+}
+/* Tech Skills */
+
+.techskills {
+  color: var(--background);
+  margin-bottom: 40px;
+  padding: 50px 80px;
+}
+
+.techskills_list {
+  padding: 0 20px;
+}
+
+.techskills_item {
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+.techskills_item:last-child {
+  margin-bottom: 0;
+}
+
+.techskills_text {
+  color: var(--background);
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* Soft Skills */
+
+.soft_skills {
+  color: var(--background);
+  margin-bottom: 40px;
+  padding: 50px 60px 50px 80px;
+}
+
+.softskills_list {
+  padding: 0 20px;
+}
+
+.softskills_list_item {
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+.softskills_list_item:last-child {
+  margin-bottom: 0;
+}
+
+.softskills_text {
+  color: var(--background);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.language_skills {
+  color: var(--background);
+  margin-bottom: 10px;
+  padding: 50px 50px 50px 80px;
+}
+.language_skills {
+  margin-bottom: 0;
+}
+
+.language_list {
+  padding: 0 0 0 20px;
+}
+
+.language_list_item {
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+.language_list_item:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,12 @@
+:root {
+  --background: #ffffff;
+  --separation-line: #000000;
+  --about-user-container: #ffffff;
+  --name-color: #232927;
+  --sidebar-background: #3b3a3b;
+  --main-font: 'Open Sans', sans-serif;
+  --secondary-text-font: 'IBM Plex Sans', sans-serif;
+  /* --secondary-text-color: #a7a9ac; */
+  --accent-color: #ae0040;
+  --accent-text-color:  #1e0139;
+}
